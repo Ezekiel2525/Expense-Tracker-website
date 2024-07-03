@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Expense Tracker</title>
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Form Section Styling */
+#register-form {
+    background: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#register-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+/* Responsive Styling */
+@media (min-width: 768px) {
+    #register-form {
+        width: 60%;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <section id="register-form">
+        <h2>Create an Account</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Expense Tracker</p>
+    </footer>
+</body>
+</html>
